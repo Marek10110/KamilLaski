@@ -1,0 +1,139 @@
+/* Resetowanie domyślnych stylów */
+* {
+    margin: 0; /* Usuwa marginesy domyślne */
+    padding: 0; /* Usuwa odstępy wewnętrzne domyślne */
+    box-sizing: border-box; /* Włącza model box, który uwzględnia obramowanie i padding w rozmiarze elementu */
+    
+}
+
+
+/* Podstawowy styl strony */
+body {
+    font-family: 'Roboto', sans-serif; /* Ustawia czcionkę dla tekstu na stronie */
+    color: #efefef; /* Ustawia kolor tekstu na ciemnoszary */
+    cursor: url('img/cameraCursor.png')15 12, auto;
+    background-color: #1D6870;
+
+
+}
+
+
+
+
+
+/* Druga sekcja - Historia */
+#portfolio {
+    /* background-color: #360E25; */
+
+    width: 100%;
+    height: 1000px;  /* Wysokość sekcji ustawiona na 100% wysokości okna przeglądarki */
+    display: flex;  /* Umożliwia centrowanie zawartości */
+    justify-content: center;  /* Wyśrodkowanie poziome */
+    align-items: center;  /* Wyśrodkowanie pionowe */
+    color: white;  /* Kolor tekstu */
+    text-align: center;  /* Wyśrodkowanie tekstu */
+
+    
+}
+
+/* Styl tekstu w sekcji */
+#portfolio h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#aboutMe {
+    /* background-color: #360E25; */
+
+    width: 100%;
+    height: 1000px;  /* Wysokość sekcji ustawiona na 100% wysokości okna przeglądarki */
+    display: flex;  /* Umożliwia centrowanie zawartości */
+    justify-content: center;  /* Wyśrodkowanie poziome */
+    align-items: center;  /* Wyśrodkowanie pionowe */
+    color: white;  /* Kolor tekstu */
+    text-align: center;  /* Wyśrodkowanie tekstu */
+
+    
+}
+
+
+#scrollUp{
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background-color: #36BAC9;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+    z-index: 100;
+    border-radius: 64px;
+    display: flex;
+    justify-content: center; /* Poziome wyśrodkowanie */
+    align-items: center;    /* Pionowe wyśrodkowanie */
+}
+#scrollUp:hover{
+    cursor: url('img/godCursor.png')0 19, pointer;
+}
+
+
+#oferty{
+    width: 100%;
+    height: 1000px;  /* Wysokość sekcji ustawiona na 100% wysokości okna przeglądarki */
+
+
+}
+#headerOferty{
+    width: 100%;
+    height: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #164D53;
+    font-size: 40px;
+}
+#offersContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Zapewnia zawijanie elementów */
+    justify-content: center; /* Wyśrodkowanie elementów */
+    gap: 20px; /* Odstęp między elementami */
+    justify-content: center;
+   
+}
+.oferta{
+    height: 400px;
+    width: 600px;
+    margin: 25px;
+    text-align: center;
+    
+    float: left;
+
+}
+.ofertaTekst{
+    height: 60px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.przykladoweVideoOfery{
+    height: 338px;
+    width: 600px;
+    
+    border-radius: 10px; /* Opcjonalne zaokrąglenie */
+    box-shadow: 0 0 20px 10px #2FA0AC; /* Poświata */
+    overflow: hidden; /* Ukryj zawartość wykraczającą poza wymiary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.przykladoweVideoOfery video {
+    max-width: 100%;  /* Wideo dopasuje się do szerokości kontenera */
+    max-height: 100%; /* Wideo dopasuje się do wysokości kontenera */
+    object-fit: cover;
+}
