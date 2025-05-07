@@ -1,0 +1,115 @@
+
+header {
+
+    position: fixed; /* Ustala element na stałe w jednym miejscu */
+    top: 0; /* Przykleja do góry strony */
+    left: 0; /* Ustala lewy margines na 0, aby był w pełni przyklejony do lewej krawędzi */
+    width: 100%; /* Ustala szerokość na 100% kontenera */
+    transition: background-color 0.3s ease; /* Płynna zmiana koloru tła */
+
+    z-index: 1000; /* Zapewnia, że header będzie nad innymi elementami */
+
+    
+    height: 60px; /* Ustawia wysokość */
+
+    text-align: center; /* Wyrównuje tekst w środku */
+    
+    background-color: rgba(0, 0, 0, 0); /* Początkowo przezroczyste tło */
+    color: #ecf0f1; /* Ustawia jasny kolor tekstu */
+    /*padding: 20px 20px;  Dodaje wewnętrzne odstępy (góra/dół 40px, lewo/prawo 20px) */
+    display: flex; /* Ustawia układ w tryb flexbox */
+    justify-content: center; /* Wyśrodkowuje zawartość w poziomie */
+}
+.scrolled{
+    background-color: #0E3236; /* Ustawia ciemnozielone tło */
+}
+
+#header_container {
+    display: flex; /* Ustawia elastyczny układ */
+    justify-content: space-between; /* Rozmieszcza elementy po przeciwnych stronach */
+    width: 70%; /* Określa szerokość kontenera nagłówka na 70% */
+}
+
+#logo{
+    width: 60px; /* Ustawia szerokość logo */
+    height: 60px; /* Ustawia wysokość logo */
+}
+#logo img {
+    max-width: 100%; /* Zapewnia, że obraz nie przekroczy kontenera */
+    height: auto; /* Automatycznie dostosowuje wysokość obrazu */
+}
+
+nav {
+    display: flex; /* Ustawia elastyczny układ dla menu */
+    gap: 10px; /* Dodaje odstęp między elementami menu */
+}
+
+.menu_option {
+    font-family: 'Roboto Slab', serif;
+
+    width: 150px; /* Ustawia szerokość przycisków menu */
+    height: auto; /* Ustawia wysokość przycisków menu */
+    display: flex; /* Aktywuje Flexbox */
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center; /* Wyśrodkowanie w pionie */
+    /*border: 1px solid black;  Czarna ramka o szerokości 1px */
+}
+nav a{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none; /* Usuwa podkreślenie */
+    color: white; /* Biały kolor tekstu */
+    transition: color 0.3s ease; /* Dodaje płynne przejście koloru */
+}
+nav a:hover{
+    color: #52868B;
+    cursor: url('img/godCursor.png')0 19, pointer;}
+
+/* Pierwsza sekcja prezentacyjna */
+#intro {
+    position: relative;  /* Umożliwia pozycjonowanie elementów wewnątrz sekcji */
+    height: 100vh;  /* Wysokość sekcji ustawiona na 100% wysokości okna przeglądarki */
+    color: white;  /* Kolor tekstu */
+    text-align: center;  /* Wyśrodkowanie tekstu */
+    overflow: hidden;  /* Ukrywa wszystko, co wychodzi poza sekcję */
+    
+}
+.intro-video {
+    position: absolute;  /* Pozycjonowanie absolutne filmu względem sekcji */
+    top: 0;  /* Ustawia wideo na górze sekcji */
+    left: 0;  /* Ustawia wideo po lewej stronie */
+    width: 100%;  /* Ustawia szerokość wideo na 100% szerokości sekcji */
+    height: 100%;  /* Ustawia wysokość wideo na 100% wysokości sekcji */
+    object-fit: cover;  /* Dopasowuje film do rozmiaru sekcji, zachowując proporcje */
+    z-index: -1;  /* Umieszcza wideo za treścią sekcji */
+}
+
+/* Div z tekstem wyświetlanym na tle filmu */
+.text-overlay {
+    display: flex;  /* Ustawienie kontenera tekstu jako flexbox */
+    flex-direction: column;  /* Umożliwia ustawienie tekstu w pionie */
+    justify-content: center;  /* Wyśrodkowanie tekstu w pionie */
+    align-items: center;  /* Wyśrodkowanie tekstu w poziomie */
+    position: absolute;  /* Pozycjonowanie absolutne dla tekstu */
+    top: 0;  /* Ustawia górną krawędź na górze sekcji */
+    left: 0;  /* Ustawia lewą krawędź na lewej krawędzi sekcji */
+    width: 100%;  /* Szerokość na 100% szerokości sekcji */
+    height: 100%;  /* Wysokość na 100% wysokości sekcji */
+    z-index: 1;  /* Ustala, że tekst będzie nad wideo */
+}
+
+/* Tekst główny - wyśrodkowany */
+#intro-text-middle {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin-top: 30vh;
+    width: 30%;  /* Szerokość na 100% szerokości sekcji */
+
+}
+
+/* Tekst stopki - przyklejony do dołu */
+#intro-text-footer {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-top: auto;  /* Sprawia, że tekst zostaje przyklejony do dołu */
+    padding-bottom: 20px; /* Dodaje margines na dole, aby tekst nie był zbyt blisko krawędzi */
+}

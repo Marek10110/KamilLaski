@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamil Łaski – Profesjonalny Fotograf</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link href="img/fontello-71454c18/css/fontello.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	
+	<script src="jquery.scrollTo.min.js"></script>
+    
+</head>
+<body>
+    <a class="icon-angle-double-up" id="scrollUp"></a>
+
+    <!-- Header -->
+    <header>
+        <div id="header_container">
+            <div id="logo">
+                <img src="img/logoTemp.webp" alt="Logo" />
+            </div>
+            <nav>
+                <div class="menu_option"><a id="linkStronaGlowna">Strona Główna</a></div>
+                <div class="menu_option"><a id="linkOferty" >Oferty</a></div>
+                <div class="menu_option"><a id="linkAboutMe">O mnie</a></div>
+                <div class="menu_option"><a id="linkPortfolio">Portfolio</a></div>
+                
+                <div class="menu_option"><a onclick="footerUpHandling(true)">Kontakt</a></div>
+
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <video autoplay loop muted playsinline class="intro-video">
+            <source src="movies/Żniwa.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="text-overlay">
+            <p id="intro-text-middle">Kamil Łaski corporation</p>
+            <p id="intro-text-footer">Filmy, reklamy, dron, zdjęcia profesjonalnie i kreatywnie</p>
+        </div>
+    </section>
+
+    <section id="oferty">
+        <div id="headerOferty">Oferty</div>
+        <div id="offersContainer">
+            
+            <div class="oferta" id="filmyPromocyjne">
+                <div class="ofertaTekst">Filmy Promocyjne</div>
+                <div class="przykladoweVideoOfery">
+                    <video id="promoVideo" src="movies/Marcin Konarski - reklama.mp4" controls
+                    poster="img/Marcin Konarski - reklama thumbnail.jpg"></video>
+                </div>
+            </div>
+
+            <div class="oferta" id="filmyPromocyjne">
+                <div class="ofertaTekst">Filmy Promocyjne</div>
+                <div class="przykladoweVideoOfery">
+                    <video id="promoVideo" src="movies/Marcin Konarski - reklama.mp4" controls poster="img/Marcin Konarski - reklama thumbnail.jpg"></video>
+                </div>
+            </div>
+    
+    
+            <div class="oferta" id="nagraniaZDrona">
+                <div class="ofertaTekst">Nagrania z Drona</div>
+                <div class="przykladoweVideoOfery">
+                    <video id="promoVideo" src="movies/Więźba Goświnowice.mp4" controls
+                    poster="img/Więźba Goświnowice thumbnails.jpg"></video>
+                </div>
+            </div>
+    
+            <div style="clear: both;"></div>
+        </div>
+
+        
+    </section>
+        
+    <section id="aboutMe">
+
+
+        <h1>O mnie</h1>
+    </section>
+    
+    <section id="portfolio">
+
+
+        <h1>Portfolio</h1>
+    </section>
+
+    
+    
+
+    
+    <div class="icon-up-big" id="footerUp"></div>
+    <!-- Footer -->
+    <footer>
+        <div class="fotter_social_media_section" id="facebook"><i class="icon-facebook"></i></div>
+        <div class="fotter_social_media_section" id="youtube"><i class="icon-youtube-play"></i></div>
+        <div class="fotter_social_media_section" id="instagram"><i class="icon-instagram"></i></div>
+        <div class="fotter_social_media_section" id="phone" onclick="copyTextToClipboard(this)"><i class="icon-phone"></i><span>+48 123 123 123</span></div>
+        <div class="fotter_social_media_section" id="whatsapp"><i class="icon-whatsapp"></i></div>
+        <div class="fotter_social_media_section" id="mail" onclick="copyTextToClipboard(this)"><i class="icon-mail"></i><span>kamil@gmail.com</span></div>
+
+        <div style="clear:both"></div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
